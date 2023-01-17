@@ -1,0 +1,28 @@
+
+body{
+	scroll-behavior: smooth;
+}
+.logo{
+	width: 30px;
+	height: 30px;
+}
+span{
+	width: 320px;
+}
+.underline{
+	width: 300px;
+}
+
+.map{
+	width: 30%;
+	height: 10%;
+}
+.icons{
+	width: 30%;
+	display: inline-block;
+	border: 2px solid red;
+}
+.icons i{
+	width: 80px;
+	height: 80px;
+}
