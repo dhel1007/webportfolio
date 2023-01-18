@@ -19,21 +19,19 @@
 <body>
 
 	<!-- Navbar Section Start -->
-	<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
-	  <a class="navbar-brand" href="#">
+	<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-secondary">
+	  <a class="navbar-brand" href="index.html">
 	  	<img src="./images/logo.jpg" class="rounded-circle logo">
 	  </a>
 
-
-	  <!-- Hamburger Icon -->
-
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <!-- toggle icon -->
+	  <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-5">
+	    <ul class="navbar-nav">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#about">About</a>
@@ -55,19 +53,30 @@
 
 	<!-- Main Content Start -->
 		<main class="container-fluid text-center mt-5">
+			<!-- Home Section Start -->
+			
+			<section id="home" class="rounded background-overlay row text-light mt-5 pt-4">
+				<div class="content bg-danger p-4 rounded">
+				    <h4 class="text-dark">Hello, my name is</h4>
+				    <h1>Windel P. <span class="text-success">Cancejo</span></h1>
+				    <h3 class="text-success">I am a <span class="text-dark">Full-Stack Developer.</span></h3>
+				</div>		
+			
+			</section>
+			<!-- Home Section Start -->
 
 			<!-- About Section Start -->
-			<section id="about" class="row bg-dark text-light min-vh-50 mt-5 pt-4">
-				<div class="offset-md-2 col-md-8">
-					<img src="./images/logo.jpg" width="250px" class="rounded-circle mt-5 mt-md-0">
-
-					<h1>Windel P. Cancejo</h1>
-					<span class="border-top border-primary d-none d-md-inline-block"></span>
-					
-					<h3>Full-Stack Developer</h3>
+			<section id="about" class="rounded bg-dark text-light min-vh-50 mt-5 pt-4">
+				<h2>About Me</h2>
+				<div class="d-lg-flex">
+					<div class="mt-1 pt-md-3 mt-md-3 offset-md-2 col-md-4 align-items-center p-3 justify-content-center">
 						
-					<p class="text-justify">
-						I am a Electronics Engineer by profession, I am really eager to learn to code.
+						<img src="./images/logo.jpg" width="250px" class="rounded-circle mt-3 mt-md-5 img-fluid">
+					</div>					
+					<div class="col-md-4 mt-1 p-2 pt-md-3 mt-md-3">
+						<p class="text-justify">
+							I am a graduate of Electronics Engineering at Cagayan State University.  
+					</div>
 				</div>			
 			
 			</section>
@@ -76,77 +85,56 @@
 
 			<!-- Projects Section Start -->
 
-			<section id="projects" class="bg-secondary text-light min-vh-100">
-				<h2 class="mb-3">My Projects</h2>
-				<span class="border-top border-primary d-none d-md-inline-block"></span>
+			<section id="projects" class="rounded bg-light text-dark min-vh-80 mt-5 pt-4">
+				<h2 class="mb-3 pt-3 mt-5">My Projects</h2>
 				<!-- Projects Container Start -->
-				<div class="d-lg-flex justify-content-center p-md-5">
+				<div class="d-lg-flex px-2 justify-content-center p-md-5">
 			
 					<!-- HTML Card Start -->
 			
-					<div class="card bg-dark col-xl-4 mb-5 mb-xl-0" style="width: 18rem;">
-					  <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" class="card-img-top mt-3" alt="...">
-					  <div class="card-body">
+					<div class="card card-style col-12 mx-auto bg-dark col-xl-4 mb-5 mb-xl-0">
+					  <img src="./images/s04-html.png" class="card-img-top mt-3" alt="...">
+					  <div class="card-body text-light">
 					    <h5 class="card-title">HTML</h5>
 					    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					    consequat.</p>
 					  </div>
 					  <div class="card-body">
-					    <a href="#" class="card-link">Link to Project</a>
+					    <a href="https://gitlab.com/b245-cancejo/s04/a1/-/blob/master/index.html" class="card-link">Link to my Project</a>
 					  </div>
 					</div>
 					<!-- HTML Card End -->
 
 					<!-- Bootstrap Card Start -->
 			
-					<div class="card bg-dark col-xl-4 mb-5 mx-xl-3 mb-xl-0 " style="width: 18rem;">
-					  <img src="https://i.morioh.com/2019/12/17/f1ce6a0af5cb.jpg" class="card-img-top mt-3" alt="...">
-					  <div class="card-body">
+					<div class="card card-style col-12 mx-auto bg-dark col-xl-4 mb-5 mx-xl-auto mb-xl-0 ">
+					  <img src="./images/s09-bootstrap.png" class="card-img-top mt-3" alt="...">
+					  <div class="card-body text-light">
 					    <h5 class="card-title">Bootstrap</h5>
 					    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					    cillum dolore eu fugiat nulla pariatur. </p>
 					  </div>
 					  <div class="card-body">
-					    <a href="#" class="card-link">Link to Project</a>
+					    <a href="https://gitlab.com/b245-cancejo/s09/a1/-/blob/master/index.html" class="card-link">Link to my Project</a>
 					  </div>
 					</div>
 					<!-- Bootstrap Card End -->
 
-					<!-- NodeJS Card Start -->
-			
-					<div class="card bg-dark col-xl-4 mb-5 mx-xl-3 mb-xl-0 " style="width: 18rem;">
-					  <img src="https://clever-solution.com/wp-content/uploads/2020/04/5625%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-1-1280x720.png" class="card-img-top mt-3" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Node JS</h5>
-					    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					  </div>
-					  <div class="card-body">
-					    <a href="#" class="card-link">Link to Project</a>
-					  </div>
-					</div>
-					<!-- NodeJS Card End -->
+				
 				</div>
 			</section>
 			<!-- Projects Section End -->
 
 			<!-- Tools Section Start -->
-			<section id="tools" class="bg-light text-dark min-vh-40">
-				<h3>Tools I Learned</h3>
+			<section id="tools" class="rounded bg-dark text-light min-vh-40 p-4 mt-5">
+				<h2 class="mb-xl-5">Tools I Learned</h2>
 
-				<div class="row p-md-5 bg-primary w-50 rounded d-lg-inline-block">
+				<div class="row p-md-5 bg-primary rounded d-lg-inline-block">
 				    <div class="col-6 col-lg-12 d-lg-flex justify-content-center align-items-center">
 				        <img width="150" src="images/logo-bootstrap.png" class="img-fluid"/>
 				        <img width="150" src="images/logo-css3.png" class="img-fluid"/>
@@ -166,53 +154,34 @@
 			<!-- Contact Section Start -->
 			
 
-			<section id="contacts" class="bg-dark min-vh-100 p-5 mt-5">
-				<h2 class="text-light">Contact Me</h2>
-					<div class="icons">
-						<a href="https://www.facebook.com/" target="_blank">
-							<i class='bx bxl-facebook-circle'></i>
-						</a>
-						<a href="https://www.instagram.com/" target="_blank">
-							<i class='bx bxl-instagram-alt' ></i>
-						</a>
-						<a href="https://ph.linkedin.com/" target="_blank">
-							<i class='bx bxl-linkedin-square' ></i>
-						</a>
-					</div>
-
+			<section id="contacts" class="rounded bg-success min-vh-80 p-5 mt-5">
+				<h2 class="text-dark">Contact Me</h2>
+					
 				<div class="row mt-5">
 					
 
-					<form class="border border-white col-12 offset-md-1 col-md-5 offset-xl-2 col-xl-4 p-3 rounded">
-					<h3 class="text-light">Message Me</h3>
+					<form class="border border-dark offset-md-4 col-md-4 offset-xl-4 col-xl-4 p-3 rounded">
+					
 					  <div class="form-group">
-					    <label class="text-light" for="full_name">Full Name</label>
+					    <label class="text-dark" for="full_name">Full Name</label>
 					    <input type="text" class="form-control" id="full_name" required>
 					  </div>
 
 					   <div class="form-group">
-					    <label class="text-light" for="email">Email address</label>
+					    <label class="text-dark" for="email">Email address</label>
 					    <input type="email" class="form-control" id="email" required>
 					  </div>					
 
 					  <div class="form-group">
-					    <label class="text-light" for="message">Message Me</label>
+					    <label class="text-dark" for="message">Message Me</label>
 					    <textarea class="form-control" id="message" rows="7"></textarea>
 					  </div>
 
-					 	<button type="submit" class="btn btn-dark">
+					 	<button type="submit" class="btn btn-primary">
 					  		Send Message
 						</button>
 					</form>
-					<!-- Maps Start -->
-					
-
-					<div class="border border-white col-12 offset-md-1 col-md-5 col-xl-4 p-2 rounded">
-						<h3 class="text-light">Visit Us</h3>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15209.473515621328!2d121.75706954464108!3d17.632703344345753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33858591f53116c9%3A0x69538c2691347b0a!2sChateau%20Leonor%20Resort!5e0!3m2!1sen!2sph!4v1673942242819!5m2!1sen!2sph" width="750" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-					</div>
-					<!-- Maps End -->
+				
 				</div>
 			</section>
 			<!-- Contact Section End -->
@@ -222,13 +191,26 @@
 		</main>
 	<!-- Main Content End -->
 
-	<footer>
-		
+	<!-- Footer Section Start -->
+
+	<footer class="rounded container-fluid bg-secondary text-light mt-3 py-1">
+		<p class="text-center">Created By: Windel Cancejo</p>
+		<div class="icons text-center">
+			<a class ="text-decoration-none  px-3" href="https://www.facebook.com/" target="_blank">
+				<i class='bx bxl-facebook-circle'></i>
+			</a>
+			<a class ="text-decoration-none" href="https://www.instagram.com/" target="_blank">
+				<i class='bx bxl-instagram-alt' ></i>
+			</a>
+			<a class ="text-decoration-none px-3" href="https://ph.linkedin.com/" target="_blank">
+				<i class='bx bxl-linkedin-square' ></i>
+			</a>
+		</div>
+
+		<p class="text-center">CopyRights 2023</p>
+
 	</footer>
-
-
-
-
+	<!-- Footer Section Start -->
 
 
 	<!-- Bootstrap Script -->
