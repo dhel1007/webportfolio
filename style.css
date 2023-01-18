@@ -19,12 +19,17 @@ body{
 /*home section start*/
 #home{
     height: 100vh;
-    
-    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1022%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1023)'%3e%3c/rect%3e%3cpath d='M1440 0L1289.57 0L1440 146.35z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1289.57 0L1440 146.35L1440 225.85L1238.51 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1238.51 0L1440 225.85L1440 331.28L1217.56 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M1217.56 0L1440 331.28L1440 411.92999999999995L961.41 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L466.63 560L0 321.43z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 321.43L466.63 560L923.4 560L0 200.13z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 200.13L923.4 560L1130.96 560L0 91.75z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 91.75L1130.96 560L1146.8500000000001 560L0 58.37z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1022'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='50%25' x2='100%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1023'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    
+   /* background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;*/
    
 }
 
@@ -48,6 +53,12 @@ body{
 
 /*home section end*/
 
+/*About Section Start*/
+
+
+/*About Section End*/
+
+
 /*Project Section Start*/
 .card-style{
 	width: 18rem;
@@ -56,7 +67,6 @@ body{
 
 /*Footer Section Start*/
 footer{
-	height: 10vh;
 	font-size: 1.2rem;
 	font-weight: 600;
 }
@@ -70,26 +80,28 @@ footer{
 	font-size: 2rem;
 	
 }
-@media screen and (min-width: 300px) {
-  footer {
-  	height: 15vh;
-    font-size: .8rem;
-  }
-}
-
-@media screen and (min-width: 900px) {
- footer {
-  	height: 10vh;
-    font-size: 1rem;
-  }
-
-}
-@media screen and (min-width: 1024px) {
- footer {
-  	height: 10vh;
-    font-size: 1.4rem;
-  }
-
-}
 
 /*Footer Section End*/
+
+/*Media Query*/
+@media screen and (max-width: 700px) {
+    footer{
+
+        line-height: .8;
+    }
+    .content{
+        height: 50vh;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #home{
+        height: 50vh;
+    }
+  
+    .profile{
+    display: none;
+  }
+}
+
